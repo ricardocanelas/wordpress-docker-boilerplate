@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "name": "wordpress-docker-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "docker:build": "docker-compose build",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "docker:down:volumes": "docker-compose down --volumes",
+    "docker:restart": "docker-compose restart",
+    "docker:pause": "docker-compose pause",
+    "docker:unpause": "docker-compose unpause",
+    "docker:bash": "docker exec -i -t simplesphp-php /bin/bash"
+  }
+}
